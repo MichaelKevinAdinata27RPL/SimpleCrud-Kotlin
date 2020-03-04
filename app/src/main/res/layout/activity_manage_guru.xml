@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".User.ManageUserActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:text="CRUD Guru"
+                android:id="@+id/txtJudul"
+                android:textSize="28sp"
+                android:gravity="center_horizontal"
+                android:paddingBottom="15dp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-smallcaps"/>
+
+
+            <EditText
+                android:id="@+id/txtNip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="NIP"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/txtNamaGuru"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Nama Guru"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/txtAlamatGuru"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Alamat Guru"
+                android:inputType="textMultiLine" />
+
+            <EditText
+                android:id="@+id/txtNoTelpGuru"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Nomor Telepon"
+                android:inputType="textMultiLine" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="10dp"
+                android:text="Jenis Kelamin"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/rgGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioLk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="Pria" />
+
+                <RadioButton
+                    android:id="@+id/radioPr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Wanita" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="10dp"
+                android:text="Mata Pelajaran"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/listMataPelajaran"
+                android:layout_marginTop="5dp"
+                android:padding="15dp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="10dp"
+                android:text="Hobby"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:id="@+id/cb"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/cbBerenang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Berenang"/>
+                <CheckBox
+                    android:id="@+id/cbBasket"
+                    android:layout_below="@+id/cbBerenang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Basket"/>
+                <CheckBox
+                    android:id="@+id/cbKuliner"
+                    android:layout_below="@+id/cbBasket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kuliner"/>
+
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/btnCreate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="TAMBAH" />
+
+            <Button
+                android:id="@+id/btnUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="UBAH"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnDelete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HAPUS"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".User.ManageUserActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textColor="@android:color/black"
+        android:layout_height="wrap_content"
+        android:text="User CRUD"
+        android:id="@+id/txtJudul"
+        android:textSize="28sp"
+        android:gravity="center_horizontal"
+        android:paddingBottom="15dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-smallcaps"/>
+
+
+    <EditText
+        android:id="@+id/txtId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="NIM"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/txtNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nama"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtAlamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Alamat"
+        android:inputType="textMultiLine" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="10dp"
+        android:text="Jenis Kelamin"
+        android:textSize="16sp" />
+
+    <RadioGroup
+        android:id="@+id/rgGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioLk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="Pria" />
+
+        <RadioButton
+            android:id="@+id/radioPr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Wanita" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnCreate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="TAMBAH" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="UBAH"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HAPUS"
+        android:visibility="gone" />
+
+</LinearLayout>

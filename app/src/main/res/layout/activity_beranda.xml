@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BerandaActivity">
+
+    <TextView
+        android:id="@+id/jdlBeranda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_marginTop="200dp"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="25dp"
+        android:text="SIMPLE CRUD"
+        android:textColor="@android:color/black"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_below="@+id/jdlBeranda"
+        android:id="@+id/btnUser"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:text="User" />
+
+    <Button
+        android:id="@+id/btnPegawai"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnUser"
+        android:layout_centerHorizontal="true"
+        android:text="Pegawai" />
+
+    <Button
+        android:id="@+id/btnInventaris"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnPegawai"
+        android:layout_centerHorizontal="true"
+        android:text="Inventaris" />
+
+    <Button
+        android:id="@+id/btnGuru"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnInventaris"
+        android:layout_centerHorizontal="true"
+        android:text="Guru" />
+
+</RelativeLayout>

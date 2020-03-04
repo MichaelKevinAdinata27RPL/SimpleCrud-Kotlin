@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_height="match_parent"
+    tools:context=".Inventaris.ManageInventarisActivity">
+
+    <TextView
+        android:id="@+id/txtJudul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center_horizontal"
+        android:paddingBottom="15dp"
+        android:text="Inventaris CRUD"
+        android:textColor="@android:color/black"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/txtIdBarang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="ID Barang"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtNamaBarang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nama Barang"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtJenisBarang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Jenis Barang"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtJumlahBarang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Jumlah Barang"
+        android:inputType="number" />
+
+
+    <Button
+        android:id="@+id/btnCreate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="TAMBAH" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="UBAH"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HAPUS"
+        android:visibility="gone" />
+
+</LinearLayout>
